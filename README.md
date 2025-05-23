@@ -1,16 +1,21 @@
 # cybersecurity-portfolio
 
 ¡Hola! 👋  
-Soy Jonathan Arape, empezando en el mundo de la ciberseguridad apasionado por aprender cómo proteger sistemas, redes y datos.
+I'm Jonathan Arape, an enthusiastic newcomer to the world of cybersecurity, passionate about learning how to protect systems, networks, and data.
 
-Actualmente estoy cursando el certificado de ciberseguridad de Google en Coursera y Tryhackme, estoy desarrollando este portafolio para mostrar mi progreso, mis prácticas y mis proyectos.
+I'm currently enrolled in the Google Cybersecurity Certificate on Coursera and exploring hands-on labs through TryHackMe. This portfolio is a space to document my journey, showcase my progress, and highlight my projects and practice work as I grow in the field.
 
-## 📘 Lo que encontrarás aquí
 
-- 📄 Mi currículum (CV)
-- 🛠️ Herramientas que he usado
-- 🔒 Laboratorios y prácticas del curso
-- 📸 Capturas y explicaciones de lo que aprendí
-- 🎓 Certificados obtenidos
+📘 What You’ll Find Here
 
-> Este portafolio crecerá a medida que avance en mi formación. ¡Gracias por visitarlo!
+📄 My Resume (CV)
+
+🛠️ Tools I’ve Worked With
+
+🔒 Labs and Hands-On Exercises from the Course
+
+📸 Screenshots and Explanations of What I’ve Learned
+
+🎓 Certificates Earned
+
+This portfolio will continue to grow as I progress in my cybersecurity training. Thanks for stopping by!
