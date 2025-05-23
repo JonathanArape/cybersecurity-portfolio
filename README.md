@@ -1,6 +1,7 @@
 # cybersecurity-portfolio
 
-¡Hola! 👋  🇪🇸 🇺🇸
+¡Hola! 👋 
+
 I'm Jonathan Arape, an enthusiastic newcomer to the world of cybersecurity, passionate about learning how to protect systems, networks, and data.
 
 I'm currently enrolled in the Google Cybersecurity Certificate on Coursera and exploring hands-on labs through TryHackMe. This portfolio is a space to document my journey, showcase my progress, and highlight my projects and practice work as I grow in the field.
