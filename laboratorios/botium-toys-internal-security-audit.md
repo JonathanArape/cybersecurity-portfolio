@@ -7,14 +7,31 @@
 
 ---
 
-## 🔍 Audit Scope and Objectives
+## Activity Scenario (Provided Instructions)
 
-The scope of this audit includes Botium Toys' internal security program: systems, networks, employee and retail devices, data management, and infrastructure.  
-The goal is to identify missing controls and best practices, and assess compliance with standards such as PCI DSS, GDPR, and SOC.
+Botium Toys is a small U.S.-based company that develops and sells toys. The company’s only physical location serves as headquarters, storefront, and warehouse. As their online presence grows, their IT department faces increased pressure to support international markets.
+
+The IT manager wants to perform an internal audit to assess risks, improve compliance, and identify missing controls using the **NIST Cybersecurity Framework (CSF)**.
+
+**Key Audit Goals:**
+- Review managed assets
+- Identify gaps in controls and compliance
+- Provide recommendations to improve security posture
+
+**Current Risks Identified:**
+- Inadequate asset management
+- Lack of encryption for customer data
+- Poor password policies
+- No backups or disaster recovery plan
+- No intrusion detection system (IDS)
+- No least privilege enforcement
+- Access to sensitive data by all employees
+
+**Risk Score:** 8 out of 10
 
 ---
 
-## ✅ Controls Assessment Checklist
+## Controls Assessment Checklist
 
 | Control                                             | Implemented |
 |-----------------------------------------------------|-------------|
@@ -52,7 +69,7 @@ The goal is to identify missing controls and best practices, and assess complian
 |--------------------------------------------------------------------------|-----------|
 | E.U. customer data is secured                                            | ✅ Yes  
 | Breach notification within 72 hours plan                                 | ✅ Yes  
-| Data is classified and inventoried                                      | ❌ No  
+| Data is classified and inventoried                                       | ❌ No  
 | Privacy policies and processes enforced                                  | ✅ Yes  
 
 ### **SOC 1 / SOC 2**
@@ -66,7 +83,7 @@ The goal is to identify missing controls and best practices, and assess complian
 
 ---
 
-## 🧾 Recommendations
+## Recommendations
 
 To improve its security posture and reduce the current high risk level (score: 8/10), Botium Toys should:
 
@@ -82,5 +99,3 @@ These improvements will help achieve compliance with key frameworks and better p
 ---
 
 > *This internal audit was conducted as part of my cybersecurity training. It demonstrates my understanding of security controls, risk analysis, and compliance best practices.*
-
-
