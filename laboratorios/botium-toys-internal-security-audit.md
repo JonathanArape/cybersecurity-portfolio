@@ -5,14 +5,16 @@
 **Course:** Google Cybersecurity Certificate  
 **Activity:** Controls and Compliance Checklist
 
-Audit Scope and Objectives
+---
+
+## 🔍 Audit Scope and Objectives
 
 The scope of this audit includes Botium Toys' internal security program: systems, networks, employee and retail devices, data management, and infrastructure.  
 The goal is to identify missing controls and best practices, and assess compliance with standards such as PCI DSS, GDPR, and SOC.
 
 ---
 
-Controls Assessment Checklist
+## ✅ Controls Assessment Checklist
 
 | Control                                             | Implemented |
 |-----------------------------------------------------|-------------|
@@ -31,11 +33,11 @@ Controls Assessment Checklist
 | CCTV Surveillance                                   | ✅ Yes  
 | Fire Detection and Prevention                       | ✅ Yes  
 
+---
 
+## Compliance Checklist
 
-Compliance Checklist
-
-**PCI DSS**
+### **PCI DSS**
 
 | Best Practice                                                            | Compliant |
 |--------------------------------------------------------------------------|-----------|
@@ -44,7 +46,7 @@ Compliance Checklist
 | Data encryption is implemented                                           | ❌ No  
 | Secure password management policies are in place                         | ❌ No  
 
-**GDPR**
+### **GDPR**
 
 | Best Practice                                                            | Compliant |
 |--------------------------------------------------------------------------|-----------|
@@ -53,7 +55,7 @@ Compliance Checklist
 | Data is classified and inventoried                                      | ❌ No  
 | Privacy policies and processes enforced                                  | ✅ Yes  
 
-**SOC 1 / SOC 2**
+### **SOC 1 / SOC 2**
 
 | Best Practice                                                            | Compliant |
 |--------------------------------------------------------------------------|-----------|
@@ -62,9 +64,9 @@ Compliance Checklist
 | Data integrity is ensured                                                | ✅ Yes  
 | Data availability for authorized individuals                             | ✅ Yes  
 
+---
 
-
-Recommendations
+## 🧾 Recommendations
 
 To improve its security posture and reduce the current high risk level (score: 8/10), Botium Toys should:
 
@@ -77,6 +79,8 @@ To improve its security posture and reduce the current high risk level (score: 8
 
 These improvements will help achieve compliance with key frameworks and better protect organizational assets.
 
+---
 
-*This internal audit was conducted as part of my cybersecurity training. It demonstrates my understanding of security controls, risk analysis, and compliance best practices.*
+> *This internal audit was conducted as part of my cybersecurity training. It demonstrates my understanding of security controls, risk analysis, and compliance best practices.*
+
 
