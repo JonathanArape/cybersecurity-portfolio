@@ -1,1 +1,57 @@
+## Security Incident Report – *yummyrecipesforme.com*
 
+**Analyst**: [Jonathan Arape]  
+**Date**: [6/05/2025]  
+**Organization**: YummyRecipesForMe.com  
+**Role**: Cybersecurity Analyst  
+**Environment**: Web Hosting Server (Linux), Apache Web Server
+
+---
+
+### 1. Identified Network Protocols
+
+During the investigation, the following network protocols were identified:
+
+- **DNS (Domain Name System)**: Used for resolving domain names to IP addresses.
+- **HTTP (HyperText Transfer Protocol)**: Used for client-server communication when accessing web pages.
+
+These protocols were observed in the captured tcpdump logs, demonstrating standard behavior that was manipulated for malicious purposes.
+
+---
+
+### 2. Incident Documentation
+
+**Summary**:  
+A former employee of YummyRecipesForMe.com carried out a brute-force attack to gain administrative access to the web hosting panel. Using default credentials, the attacker successfully logged into the admin interface. Once inside, they modified the website’s source code by injecting a malicious JavaScript script.
+
+This script prompted site visitors to download an executable file under the false premise of accessing free recipes. When executed, the file redirected users to a fraudulent site (*greatrecipesforme.com*) hosting malware. The attacker also changed the admin password, locking out the original owner.
+
+**Timeline of Events**:
+1. DNS request made for `yummyrecipesforme.com`.
+2. HTTP request established to fetch the main page.
+3. JavaScript prompts user to download a file.
+4. DNS request made for `greatrecipesforme.com`.
+5. HTTP request sent to `greatrecipesforme.com` upon file execution.
+
+**Indicators of Compromise (IOCs)**:
+- Modified source code with JavaScript injection.
+- Unauthorized file downloads triggered upon site visit.
+- Redirection to malicious domain.
+- Reports from users describing slow system performance after visiting the site.
+
+**Discovery**:  
+Multiple customer support emails were received reporting suspicious file downloads and redirections after visiting the main website. A sandbox analysis and tcpdump review confirmed the malicious activity.
+
+---
+
+### 3. Security Recommendation
+
+**Recommendation**: Implement **Multi-Factor Authentication (MFA)** and disable the use of default passwords.
+
+**Justification**:  
+MFA adds an additional layer of protection by requiring a second form of verification (e.g., a code sent to a mobile device), making it significantly harder for attackers to gain unauthorized access even if the primary password is compromised. Furthermore, enforcing secure, non-default passwords would have prevented the brute-force attack from succeeding so easily.
+
+**Additional Suggestions**:
+- Enforce account lockout policies after repeated failed login attempts.
+- Regularly audit admin credentials and access logs.
+- Conduct routine vulnerability assessments and code reviews.
