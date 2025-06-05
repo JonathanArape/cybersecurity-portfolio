@@ -1,1 +1,59 @@
+# Security Risk Assessment – Social Media Organization
+
+**Analyst Name**: [Jonathan arape]  
+**Date**: [6/5/2025]  
+**Organization**: [Social Media Company Name]  
+**Role**: Cybersecurity Analyst
+
+---
+
+## Identified Vulnerability
+
+Scenario
+
+Review the following scenario. Then complete the step-by-step instructions.
+
+You are a security analyst working for a social media organization. The organization recently experienced a major data breach, which compromised the safety of their customers’ personal information, such as names and addresses. Your organization wants to implement strong network hardening practices that can be performed consistently to prevent attacks and breaches in the future. 
+
+After inspecting the organization’s network, you discover four major vulnerabilities. The four vulnerabilities are as follows:
+
+The organization’s employees' share passwords.
+
+The admin password for the database is set to the default.
+
+The firewalls do not have rules in place to filter traffic coming in and out of the network.
+
+Multifactor authentication (MFA) is not used. 
+
+If no action is taken to address these vulnerabilities, the organization is at risk of experiencing another data breach or other attacks in the future. 
+
+In this activity, you will write a security risk assessment to analyze the incident and explain what methods can be used to further secure the network.
+
+**Selected Vulnerability**: The database administrator password is set to the default.
+
+---
+
+## Recommended Hardening Tools and Methods
+
+1. **Password Policy Enforcement Tool**  
+   Enforce the use of strong, non-default passwords through automated password management tools and policies that include length, complexity, expiration periods, and history tracking.
+
+2. **Multi-Factor Authentication (MFA)**  
+   Enabling MFA for all administrative accounts provides an additional layer of protection in case a password is leaked or brute-forced.
+
+3. **Regular Security Audits and Configuration Management**  
+   Perform scheduled security audits to ensure that sensitive credentials like the database admin password are rotated regularly and are never left at default settings. Implement configuration baselines to prevent weak setups.
+
+---
+
+##  Justification and Effectiveness
+
+- **Why it's effective**:  
+  Default passwords are widely known and pose a major security risk. Enforcing strong passwords and MFA drastically reduces the chances of unauthorized access, even if passwords are compromised. Regular audits catch misconfigurations early before they can be exploited.
+
+- **Frequency of implementation**:  
+  - Password policy enforcement and MFA setup: One-time setup with periodic reviews (every 6 months).  
+  - Security audits: Monthly or after any significant infrastructure changes.
+
+By implementing these methods, the organization significantly reduces the risk of future data breaches caused by weak authentication practices. This layered approach not only addresses the selected vulnerability but also improves the organization’s overall security posture.
 
