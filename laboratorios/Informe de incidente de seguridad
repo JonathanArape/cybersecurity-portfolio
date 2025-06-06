@@ -1,1 +1,64 @@
+# Informe de Incidente de Seguridad  
+**Empresa:** Empresa Multimedia de Servicios Digitales  
+**Analista:** [Jonathan arape]  
+
+---
+
+## 1. Resumen del Incidente  
+La empresa sufrió un ataque de denegación de servicio distribuido (DDoS) que afectó la red interna durante aproximadamente dos horas. El ataque consistió en una avalancha masiva de paquetes ICMP entrantes (pings) 
+que saturaron la red y provocaron la indisponibilidad de los servicios de red. 
+
+Los servicios críticos fueron restablecidos tras bloquear el tráfico ICMP y detener servicios no esenciales. 
+
+La causa principal fue la explotación de una vulnerabilidad en un cortafuegos no configurado correctamente, lo que permitió que un actor malicioso enviara tráfico ICMP masivo con direcciones IP posiblemente falsificadas.
+
+---
+
+## 2. Identificación del Ataque y Sistemas Afectados  
+- **Tipo de ataque:** Ataque de Denegación de Servicio Distribuido (DDoS) mediante tráfico ICMP.  
+- **Causa:** Cortafuegos sin reglas adecuadas para filtrar tráfico ICMP entrante y no verificación de direcciones IP.  
+- **Sistemas afectados:**  
+  - Red interna de la organización (interrupción de servicios de red).  
+  - Servicios críticos y no críticos alojados en la infraestructura interna.  
+- **Impacto:** Interrupción total de acceso a recursos internos durante dos horas, con paralización temporal de servicios no críticos.
+
+---
+
+## 3. Plan para Proteger la Red (Sección "Proteger")  
+Para mitigar futuros ataques similares y fortalecer la seguridad de la red, se recomienda:  
+- Actualizar y reforzar la configuración del cortafuegos con reglas específicas para limitar la tasa de paquetes ICMP entrantes (Rate limiting).  
+- Implementar verificación de direcciones IP de origen para detectar y bloquear paquetes con IPs falsificadas (spoofing).  
+- Mantener políticas estrictas de gestión de dispositivos y privilegios de acceso para evitar configuraciones erróneas.  
+- Capacitar al equipo en mejores prácticas para administración segura de cortafuegos y monitoreo de red.  
+- Realizar auditorías periódicas de seguridad para identificar y corregir posibles vulnerabilidades.
+
+---
+
+## 4. Métodos para Detectar Incidentes Futuros (Sección "Detectar")  
+- Implementar software de monitoreo de red que detecte patrones anormales de tráfico, especialmente picos inusuales en paquetes ICMP.  
+- Utilizar sistemas IDS/IPS configurados para analizar el tráfico en tiempo real y bloquear paquetes con características sospechosas.  
+- Mantener listas actualizadas de direcciones IP autorizadas y sospechosas para correlacionar tráfico entrante.  
+- Monitorear logs de red y alertas de seguridad para identificar intentos de evasión o ataques emergentes.  
+- Realizar revisiones y análisis continuos de accesos y actividades de usuarios para detectar comportamientos inusuales.
+
+---
+
+## 5. Plan de Respuesta para Incidentes (Sección "Responder")  
+- Contener el incidente bloqueando el tráfico malicioso inmediatamente en el cortafuegos (como se hizo con el bloqueo de paquetes ICMP).  
+- Detener temporalmente servicios no críticos para reducir la carga en la red y proteger los servicios esenciales.  
+- Recopilar y analizar datos del tráfico anómalo para entender la magnitud y vectores del ataque.  
+- Activar protocolos de comunicación interna para informar a las partes interesadas y coordinar la respuesta.  
+- Implementar reglas y actualizaciones en los sistemas de seguridad para neutralizar la amenaza actual y prevenir ataques similares.  
+- Documentar el incidente y la respuesta para mejorar futuros planes y procedimientos.
+
+---
+
+## 6. Plan de Recuperación (Sección "Recuperar")  
+- Restaurar gradualmente los servicios no críticos asegurando que no haya tráfico malicioso activo.  
+- Verificar la integridad de sistemas y datos afectados antes de ponerlos nuevamente en línea.  
+- Revisar configuraciones de red, cortafuegos y sistemas de seguridad para asegurar que los cambios preventivos estén activos.  
+- Mantener comunicación continua con el equipo de TI y ciberseguridad para monitorear posibles reapariciones del ataque.  
+- Actualizar el plan de recuperación ante desastres y respuesta a incidentes basado en lecciones aprendidas del ataque.  
+- Realizar simulacros y capacitaciones para mejorar la preparación ante futuros incidentes.
+
 
